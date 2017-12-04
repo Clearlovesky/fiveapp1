@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		p{
+			font-size: 5rem;
+			background-color:pink;
+		}
+	</style>
+</head>
+<body>
+	<p>999</p>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		function subStr(url) {
+		    var obj = {};
+		    var str = url.split('?')[1];
+
+		    //console.log(str);
+		    var str2 = str.split('&');
+		    // console.log(str2);
+		    for (var k in str2) {
+		        var str3 = str2[k].split('=');
+		        obj[str3[0]] = str3[1];
+		    }
+		    return obj;
+		}
+		var href = subStr(window.location.href);
+		 console.log(href.a);
+		 console.log(href);
+
+		// var couponid = href.couponid;
+		console.log(decodeURI(href.a));
+		// 更改头部标题数据decodeURI(乱码值)方法把地址栏中获取到的乱码转换成相应的中文
+		$("p").text(decodeURI(href.a)+"优惠券");
+		// $("p").text(href.a+"优惠券");
+	</script>
+</body>
+</html>

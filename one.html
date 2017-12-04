@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>123456</p>
+	<h1>中文传值会变乱码</h1>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+	// 非中文
+	$("p").click(function(){
+		var txt =$(this).html();
+		window.location.href="two.html?a="+txt;
+	})
+	// 中文
+	$("h1").click(function(){
+		var txt1 =$(this).html();
+		window.location.href="two.html?a="+txt1;
+	})
+	</script>
+</body>
+</html>

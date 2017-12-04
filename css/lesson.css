@@ -1,0 +1,39 @@
+/* 课程列表 */
+.list{
+	padding: 2px 2rem;
+	margin-top: 8rem;
+	width: 100%;
+	background-color: #FFF;
+	color: #fff;
+}
+.list>li{
+	width: 100%;
+	height: 20rem;
+	border-radius: 1rem;
+	background-color: pink;
+	margin-top: 1.5rem;
+}
+.one{
+	display: inline-block;
+	width: 100%;
+	height: 6rem;
+	font-size: 4rem;
+	margin-top: 2rem;
+	margin-left: 2rem;
+}
+.two{
+	display: inline-block;
+	width: 100%;
+	height: 4rem;
+	font-size: 2rem;
+	margin-top: 0.5rem;
+	margin-left: 2rem;
+}
+.three{
+	display: inline-block;
+	width: 100%;
+	height: 4rem;
+	font-size: 2rem;
+	margin-top: 1.5rem;
+	margin-left: 2rem;
+}
